@@ -487,16 +487,6 @@ If the `controller` service is not running, restart the project:
 docker compose up -d --build
 ```
 
-### Laravel log permission error
-
-If Laravel cannot write to `storage/logs/laravel.log`, run:
-
-```bash
-docker compose exec -u root api sh -c "mkdir -p storage/logs bootstrap/cache && chown -R www-data:www-data storage bootstrap/cache && chmod -R 775 storage bootstrap/cache"
-docker compose exec api php artisan optimize:clear
-```
-
-The project is also configured to use `LOG_CHANNEL=stderr` for Docker-friendly logging.
 
 ### Missing customer test data
 
