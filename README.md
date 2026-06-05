@@ -185,7 +185,7 @@ If `api/.env` does not exist, Laravel commands and Docker startup may fail.
 ### 1. Clone the repository
 
 ```bash
-git clone <your-repository-url>
+git clone https://github.com/jjclucas22-byte/Technical_Exam.git
 cd Technical-Exam
 ```
 
