@@ -471,23 +471,6 @@ Authentication tests are not included because authentication is not part of this
 
 ---
 
-## Code Formatting
-
-Run Laravel Pint:
-
-```bash
-docker compose exec api ./vendor/bin/pint
-```
-
-For the frontend, run:
-
-```bash
-cd frontend
-npm run build
-```
-
----
-
 ## Troubleshooting
 
 ### `Unable to connect to the remote server`
@@ -550,32 +533,6 @@ PUT       api/customers/{customer}
 PATCH     api/customers/{customer}
 DELETE    api/customers/{customer}
 ```
-
----
-
-## Git Workflow
-
-Recommended commit flow:
-
-```bash
-git add .
-git commit -m "Set up Docker environment"
-git commit -m "Implement customer CRUD API"
-git commit -m "Add Elasticsearch customer synchronization"
-git commit -m "Implement React customer CRUD interface"
-git commit -m "Add customer API and search service tests"
-git commit -m "Update project README"
-```
-
-Before submitting:
-
-```bash
-docker compose up -d --build
-docker compose exec api php artisan migrate:fresh --seed
-docker compose exec api php artisan test
-```
-
-Then push to a public Git repository.
 
 ---
 
