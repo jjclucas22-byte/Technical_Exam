@@ -153,10 +153,22 @@ Copy-Item .env
 Copy-Item api/.env
 ```
 
+After creating `.env`, make sure it contains the following relevant values:
+```APP_PORT=8080
+
+DB_DATABASE=sugarcrm
+DB_USERNAME=sugarcrm
+DB_PASSWORD=secret
+DB_ROOT_PASSWORD=rootsecret
+DB_FORWARD_PORT=3306
+
+ELASTICSEARCH_VERSION=9.2.8
+ELASTICSEARCH_FORWARD_PORT=9200
+```
+
 After creating `api/.env`, make sure it contains the following relevant values:
 
-```env
-APP_NAME="Technical Exam"
+```APP_NAME="Technical Exam"
 APP_ENV=local
 APP_DEBUG=true
 APP_URL=http://localhost:8080
