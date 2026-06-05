@@ -132,7 +132,7 @@ Technical-Exam/
 
 ## Environment Configuration
 
-Each developer must create their own local `.env` files. The project does not commit personal `.env` files because they may contain machine-specific settings or secrets.
+Each developer must create their own local `.env` files. The project does not commit personal `.env` files because they may contain machine-specific settings or secrets (Or in this case my own standards will be an example for security but since this is only an example. The following will be a short instruction on how you can access my results for this exam.).
 
 Create the root environment file:
 
