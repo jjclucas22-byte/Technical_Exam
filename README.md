@@ -4,7 +4,6 @@ A full-stack customer management application built for the technical exam.
 
 The project provides a Laravel REST API, a React frontend, a MySQL database, and an Elasticsearch search service. The application allows users to create, view, update, delete, list, and search customer records.
 
-Authentication/login is intentionally not included because the exam scope focuses on customer CRUD operations, Docker setup, Laravel API development, React frontend development, Elasticsearch synchronization, testing, and clean code organization.
 
 ---
 
@@ -271,7 +270,7 @@ docker compose exec api php artisan db:seed
 
 ## API Endpoints
 
-All API routes are public. Login is not required.
+All API routes are public. 
 
 | Method | Endpoint | Description |
 | --- | --- | --- |
@@ -572,7 +571,6 @@ Then push to a public Git repository.
 
 - The project does not use Laravel Sail.
 - The project does not use Laravel Scout.
-- The project does not include login or registration.
 - MySQL is the source of truth.
 - Elasticsearch is used only for searching customer records.
 - Docker Compose runs the required services: `api`, `controller`, `database`, and `searcher`.
