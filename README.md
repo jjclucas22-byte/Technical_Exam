@@ -137,20 +137,20 @@ Each developer must create their own local `.env` files. The project does not co
 Create the root environment file:
 
 ```bash
-cp .env.example .env
+cp .env
 ```
 
 Create the Laravel API environment file:
 
 ```bash
-cp api/.env.example api/.env
+cp api/.env
 ```
 
 On Windows PowerShell:
 
 ```powershell
-Copy-Item .env.example .env
-Copy-Item api/.env.example api/.env
+Copy-Item .env
+Copy-Item api/.env
 ```
 
 After creating `api/.env`, make sure it contains the following relevant values:
